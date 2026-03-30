@@ -59,7 +59,7 @@ const Services = () => {
                 key={index}
                 className="card-surface p-6 flex flex-col h-full"
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-lg mb-4">
+                <div className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-lg mb-4">
                   <IconComponent className="h-6 w-6 text-white" />
                 </div>
 
@@ -74,14 +74,14 @@ const Services = () => {
                 <ul className="space-y-2 mb-4">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                      <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 shrink-0" />
+                      <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
 
                 <div className="mt-auto pt-4">
-                  <button type="button" className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200">
+                  <button type="button" className="w-full bg-blue-500 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-600 transition-all duration-200">
                     了解详情
                   </button>
                 </div>
@@ -91,14 +91,14 @@ const Services = () => {
         </div>
 
         <div className="mt-14 md:mt-16 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 md:p-10 text-white text-center shadow-lg">
+          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 md:p-10 text-white text-center shadow-lg">
             <h3 className="text-2xl md:text-3xl font-bold mb-3">需要定制化解决方案？</h3>
             <p className="text-base md:text-lg mb-6 text-white/90 max-w-xl mx-auto">
               我们的专家团队随时为您提供专业的技术咨询服务
             </p>
             <a
               href="#contact"
-              className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200"
+              className="inline-block bg-white text-blue-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200"
             >
               立即联系我们
             </a>

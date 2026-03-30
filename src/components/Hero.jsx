@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Shield, Lock, Eye } from 'lucide-react'
+import { ArrowRight, Lock, Eye, Activity } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -18,15 +18,15 @@ const Hero = () => {
         </h1>
         
         <p className="text-base sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-          专注于企业数字化转型与网络安全
+          以戍边使命保卫用户网络空间安全
         </p>
         
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-10 sm:mb-12">
-          <a href="#services" className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold text-base hover:bg-gray-50 transition-all duration-200">
+          <a href="#services" className="inline-flex items-center justify-center gap-2 bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold text-base hover:bg-gray-50 transition-all duration-200">
             <span>了解更多</span>
             <ArrowRight className="h-4 w-4" />
           </a>
-          <a href="#contact" className="inline-block border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-base hover:bg-white hover:text-blue-600 transition-all duration-200">
+          <a href="#contact" className="inline-block border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-base hover:bg-white hover:text-blue-500 transition-all duration-200">
             联系我们
           </a>
         </div>
@@ -35,25 +35,25 @@ const Hero = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 max-w-4xl mx-auto mt-4 sm:mt-6">
           <div className="text-center">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg p-5 sm:p-6 hover:bg-white/30 transition-all duration-300">
-              <Lock className="h-6 w-6 text-white mx-auto mb-3" />
-              <h3 className="text-white font-semibold mb-2">数据安全</h3>
-              <p className="text-white/80 text-sm">企业级数据保护</p>
+              <Activity className="h-6 w-6 text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold mb-2">安全运营服务</h3>
+              <p className="text-white/80 text-sm">持续监测与应急响应</p>
             </div>
           </div>
-          
+
           <div className="text-center">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg p-5 sm:p-6 hover:bg-white/30 transition-all duration-300">
               <Eye className="h-6 w-6 text-white mx-auto mb-3" />
-              <h3 className="text-white font-semibold mb-2">智能监控</h3>
-              <p className="text-white/80 text-sm">实时威胁检测</p>
+              <h3 className="text-white font-semibold mb-2">安全检测服务</h3>
+              <p className="text-white/80 text-sm">渗透测试与安全评估</p>
             </div>
           </div>
-          
+
           <div className="text-center">
             <div className="bg-white/20 backdrop-blur-sm rounded-lg p-5 sm:p-6 hover:bg-white/30 transition-all duration-300">
-              <Shield className="h-6 w-6 text-white mx-auto mb-3" />
-              <h3 className="text-white font-semibold mb-2">安全防护</h3>
-              <p className="text-white/80 text-sm">全方位安全体系</p>
+              <Lock className="h-6 w-6 text-white mx-auto mb-3" />
+              <h3 className="text-white font-semibold mb-2">数据安全服务</h3>
+              <p className="text-white/80 text-sm">数据保护与合规治理</p>
             </div>
           </div>
         </div>

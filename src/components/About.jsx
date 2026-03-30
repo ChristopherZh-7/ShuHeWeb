@@ -29,7 +29,7 @@ const About = () => {
         <div className="section-head">
           <h2 className="section-title">关于戍合科技</h2>
           <p className="section-desc">
-            我们是一支专业的技术团队，致力于为企业提供最优质的数字化转型解决方案
+            戍合科技采用管家式服务模式：由专属顾问与工程师团队长期跟进，主动巡检、快速响应，从安全策略、建设落地到日常运营与应急处置全程托管，让企业像拥有一位可靠的安全管家，省心、透明、可持续。
           </p>
         </div>
 
@@ -38,32 +38,31 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-5">我们的使命</h3>
             <p className="text-gray-600 mb-5 leading-relaxed">
-              戍合科技成立于2022，专注于为企业提供全方位的数字化转型服务。
-              我们相信，在数字化时代，技术创新是企业发展的核心驱动力。
+              以戍边使命保卫用户网络空间安全——这是戍合科技的初心，也是我们一切工作的出发点。
+              我们将这份责任落实到每一次巡检、每一次响应与每一次方案交付之中，以专业与可靠守护客户的数字资产与业务连续性。
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              我们的团队由经验丰富的技术专家组成，拥有多年的实战经验和深厚的技术功底。
-              我们始终保持对最新技术趋势的敏锐洞察，为客户提供前瞻性的解决方案。
+              戍合科技成立于2022年，团队由经验丰富的安全与工程专家组成。面对持续演进的威胁环境，我们坚持以客户为中心，以管家式服务贯穿策略、建设与运营，与客户并肩构筑可信赖的安全防线。
             </p>
 
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full shrink-0" />
-                <span className="text-gray-700">专业的技术团队和丰富的实战经验</span>
+                <span className="w-2 h-2 bg-blue-500 rounded-full shrink-0" />
+                <span className="text-gray-700">以戍边使命统领安全服务与交付标准</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full shrink-0" />
-                <span className="text-gray-700">覆盖全行业的数字化转型解决方案</span>
+                <span className="w-2 h-2 bg-blue-500 rounded-full shrink-0" />
+                <span className="text-gray-700">管家式陪伴：主动巡检、持续改进、透明可预期</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full shrink-0" />
-                <span className="text-gray-700">7x24小时全天候技术支持服务</span>
+                <span className="w-2 h-2 bg-blue-500 rounded-full shrink-0" />
+                <span className="text-gray-700">7x24 值守与应急响应能力</span>
               </div>
             </div>
           </div>
 
           <div className="lg:sticky lg:top-28">
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-6 sm:p-8 text-white shadow-lg">
+            <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 sm:p-8 text-white shadow-lg">
               <h4 className="text-xl sm:text-2xl font-bold mb-5">为什么选择我们？</h4>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -113,7 +112,7 @@ const About = () => {
                   />
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-2">{member.name}</h4>
-                <div className="text-blue-600 font-semibold mb-3 text-sm sm:text-base">{member.role}</div>
+                <div className="text-blue-500 font-semibold mb-3 text-sm sm:text-base">{member.role}</div>
                 <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
               </div>
             ))}

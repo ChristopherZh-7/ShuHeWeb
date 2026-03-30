@@ -3,37 +3,38 @@ import { ArrowRight, Shield, Lock, Eye } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex flex-col pt-16 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 hero-gradient"></div>
       
       {/* Subtle overlay */}
       <div className="absolute inset-0 bg-white/10"></div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+      {/* Content — 预留导航高度后垂直居中 */}
+      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="text-center max-w-5xl mx-auto w-full">
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-5 sm:mb-6 leading-tight tracking-tight">
           戍合科技
         </h1>
         
-        <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
           专注于企业数字化转型与网络安全
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold text-base hover:bg-gray-50 transition-all duration-200 flex items-center space-x-2">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-10 sm:mb-12">
+          <a href="#services" className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold text-base hover:bg-gray-50 transition-all duration-200">
             <span>了解更多</span>
             <ArrowRight className="h-4 w-4" />
-          </button>
-                     <a href="#contact" className="inline-block border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-base hover:bg-white hover:text-blue-600 transition-all duration-200">
-             联系我们
-           </a>
+          </a>
+          <a href="#contact" className="inline-block border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-base hover:bg-white hover:text-blue-600 transition-all duration-200">
+            联系我们
+          </a>
         </div>
 
         {/* Feature highlights */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 max-w-4xl mx-auto mt-4 sm:mt-6">
           <div className="text-center">
-            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 hover:bg-white/30 transition-all duration-300">
+            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-5 sm:p-6 hover:bg-white/30 transition-all duration-300">
               <Lock className="h-6 w-6 text-white mx-auto mb-3" />
               <h3 className="text-white font-semibold mb-2">数据安全</h3>
               <p className="text-white/80 text-sm">企业级数据保护</p>
@@ -41,7 +42,7 @@ const Hero = () => {
           </div>
           
           <div className="text-center">
-            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 hover:bg-white/30 transition-all duration-300">
+            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-5 sm:p-6 hover:bg-white/30 transition-all duration-300">
               <Eye className="h-6 w-6 text-white mx-auto mb-3" />
               <h3 className="text-white font-semibold mb-2">智能监控</h3>
               <p className="text-white/80 text-sm">实时威胁检测</p>
@@ -49,12 +50,13 @@ const Hero = () => {
           </div>
           
           <div className="text-center">
-            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 hover:bg-white/30 transition-all duration-300">
+            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-5 sm:p-6 hover:bg-white/30 transition-all duration-300">
               <Shield className="h-6 w-6 text-white mx-auto mb-3" />
               <h3 className="text-white font-semibold mb-2">安全防护</h3>
               <p className="text-white/80 text-sm">全方位安全体系</p>
             </div>
           </div>
+        </div>
         </div>
       </div>
 

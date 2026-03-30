@@ -28,6 +28,39 @@
   .text-gradient {
     @apply bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent;
   }
+
+  /* 全站统一：纵向留白与版心 */
+  .section-y {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .section-inner {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-head {
+    @apply text-center mb-12 md:mb-16;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold tracking-tight text-gray-900;
+  }
+
+  .section-desc {
+    @apply mt-3 sm:mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed;
+  }
+
+  .subsection-head {
+    @apply text-center mb-10 md:mb-12;
+  }
+
+  .subsection-title {
+    @apply text-xl sm:text-2xl font-bold tracking-tight text-gray-900;
+  }
+
+  .card-surface {
+    @apply bg-white rounded-xl border border-gray-200/90 shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
 }
 
 html {

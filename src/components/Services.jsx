@@ -42,68 +42,66 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            我们的服务
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+    <section id="services" className="section-y bg-white">
+      <div className="section-inner">
+        <div className="section-head">
+          <h2 className="section-title">我们的服务</h2>
+          <p className="section-desc">
             为企业提供全方位的数字化转型与网络安全解决方案
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (
-                             <div
-                 key={index}
-                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 flex flex-col h-full"
-               >
-                 <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-lg mb-4">
-                   <IconComponent className="h-6 w-6 text-white" />
-                 </div>
-                 
-                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                   {service.title}
-                 </h3>
-                 
-                 <p className="text-gray-600 mb-4 leading-relaxed">
-                   {service.description}
-                 </p>
-                 
-                 <ul className="space-y-2 mb-4">
-                   {service.features.map((feature, featureIndex) => (
-                     <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                       <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></div>
-                       {feature}
-                     </li>
-                   ))}
-                 </ul>
-                 
-                                   <div className="mt-auto pt-4">
-                    <button className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200">
-                      了解详情
-                    </button>
-                  </div>
-               </div>
+              <div
+                key={index}
+                className="card-surface p-6 flex flex-col h-full"
+              >
+                <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-lg mb-4">
+                  <IconComponent className="h-6 w-6 text-white" />
+                </div>
+
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {service.title}
+                </h3>
+
+                <p className="text-gray-600 mb-4 leading-relaxed text-[15px] sm:text-base">
+                  {service.description}
+                </p>
+
+                <ul className="space-y-2 mb-4">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center text-sm text-gray-600">
+                      <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-auto pt-4">
+                  <button type="button" className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200">
+                    了解详情
+                  </button>
+                </div>
+              </div>
             )
           })}
         </div>
 
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="bg-blue-600 rounded-lg p-8 text-white">
-            <h3 className="text-3xl font-bold mb-4">需要定制化解决方案？</h3>
-            <p className="text-lg mb-6 opacity-90">
+        <div className="mt-14 md:mt-16 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 md:p-10 text-white text-center shadow-lg">
+            <h3 className="text-2xl md:text-3xl font-bold mb-3">需要定制化解决方案？</h3>
+            <p className="text-base md:text-lg mb-6 text-white/90 max-w-xl mx-auto">
               我们的专家团队随时为您提供专业的技术咨询服务
             </p>
-                         <a href="#contact" className="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200">
-               立即联系我们
-             </a>
+            <a
+              href="#contact"
+              className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all duration-200"
+            >
+              立即联系我们
+            </a>
           </div>
         </div>
       </div>

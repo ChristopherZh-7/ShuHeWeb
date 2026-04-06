@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Shield, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,11 +27,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Shield className={`h-8 w-8 ${scrolled ? 'text-black' : 'text-white'}`} />
-            <span className={`font-semibold text-xl ${scrolled ? 'text-black' : 'text-white'}`}>
-              戍合科技
-            </span>
+          <div className="flex items-center">
+            <img
+              src="/logo.png"
+              alt="戍合科技"
+              className={`h-10 w-auto object-contain transition-all duration-300 ${
+                scrolled ? '' : 'brightness-0 invert'
+              }`}
+            />
           </div>
 
           {/* Desktop Navigation */}

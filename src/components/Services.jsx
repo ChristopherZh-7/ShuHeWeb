@@ -80,11 +80,6 @@ const Services = () => {
                   ))}
                 </ul>
 
-                <div className="mt-auto pt-4">
-                  <button type="button" className="w-full bg-blue-500 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-600 transition-all duration-200">
-                    了解详情
-                  </button>
-                </div>
               </div>
             )
           })}

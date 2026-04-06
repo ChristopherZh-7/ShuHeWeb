@@ -47,7 +47,7 @@ const Services = () => {
         <div className="section-head">
           <h2 className="section-title">我们的服务</h2>
           <p className="section-desc">
-            为企业提供全方位的数字化转型与网络安全解决方案
+            为客户提供全方位的数字化转型与网络安全解决方案
           </p>
         </div>
 

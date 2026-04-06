@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/ShuHeWeb/' : '/',
+export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
@@ -11,4 +10,4 @@ export default defineConfig(({ command }) => ({
     port: 3000,
     open: true
   }
-}))
+})
